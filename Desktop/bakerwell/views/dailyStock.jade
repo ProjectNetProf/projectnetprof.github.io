@@ -1,0 +1,50 @@
+extends layout
+
+block head
+
+block title
+    title Daily Stock Inventory System
+
+block backgroundimage
+    img.pageBg(src='/images/dailyStock_img/daily_Stock_background.png' , width = '70%')
+
+
+block sidebar
+    li.item
+        a(href='#anch1')
+            img.svg(src='/images/dailyStock_img/view_list_btn.svg', alt='View List')
+            .textDiv
+                span.itemText View List
+
+    hr.divider
+
+    li.item
+        a(href='#anch1')
+            img.svg(src='/images/dailyStock_img/new_list_btn.svg', alt='Create New')
+            .textDiv
+                span.itemText Create New
+
+
+block utiltop
+    li.utilItem
+        a(href='/')
+            img.svg(src='/images/utilities_img/home_btn.svg', alt='home')
+block utilbottom
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/search_btn.svg', alt='Search')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/redeem_btn.svg', alt='Redeem')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/print_btn.svg', alt='Print')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/acc_info_btn.svg', alt='Acc info')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/logout_btn.svg', alt='Logout')
+
+block content
+    h1.pageTitle Daily Stock Inventory System

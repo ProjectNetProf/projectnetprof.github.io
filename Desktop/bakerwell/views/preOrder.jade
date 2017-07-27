@@ -1,0 +1,60 @@
+extends layout
+head
+
+
+block title
+    title Pre-Order System
+
+
+
+
+block backgroundimage
+    img.pageBg(src='/images/preOrder_img/pre_Order_background.png' , width = '85%')
+
+block sidebar
+    li.item
+        a(href='#')
+            img.svg(src='/images/preOrder_img/monthly_btn.svg', alt='Monthly')
+            .textDiv
+                span.itemText(style='margin-left:10px;') Monthly
+    hr.divider
+    li.item
+        a(href='#')
+            img.svg(src='/images/preOrder_img/weekly_btn.svg', alt='Weekly)')
+            .textDiv
+                span.itemText(style='margin-left:10px;') Weekly
+    hr.divider
+    li.item
+        a(href='#')
+            img.svg(src='/images/preOrder_img/daily_btn.svg', alt='Weekly)')
+            .textDiv
+                span.itemText(style='margin-left:10px;') Daily
+
+
+
+
+block utiltop
+    li.utilItem
+        a(href='/')
+            img.svg(src='/images/utilities_img/home_btn.svg', alt='home')
+block utilbottom
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/search_btn.svg', alt='Search')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/redeem_btn.svg', alt='Redeem')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/print_btn.svg', alt='Print')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/acc_info_btn.svg', alt='Acc info')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/logout_btn.svg', alt='Logout')
+
+block content
+    h1.pageTitle Pre-Order System
+
+

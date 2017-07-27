@@ -1,0 +1,131 @@
+a {
+  text-decoration:none;
+}
+html{
+height:100%;
+}
+
+body{
+background-image: url('/images/main_background.png');
+background-size: cover;
+height : 100%;
+}
+.container-fluid {
+    height: 100%;
+}
+
+.row{
+    height: 100%;
+}
+
+#logo{
+    margin: 5% 0% 5% 0%;
+}
+
+.itemText{
+    color: #781f16;
+}
+
+.divider{
+
+    background-color: #781f16;
+    width: 70%;
+    height: 1px;
+    margin: 1% auto 1% auto;
+}
+
+.textDiv{
+    width: 35%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+#utilWrapper{
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 70px;
+    right: 0;
+
+}
+#utiltop{
+    position: fixed;
+    right: 0;
+    top: 5px;
+    width: 130px;
+}
+
+#utilbottom{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 130px;
+}
+
+.utilItem{
+    display: inline-block;
+    width: 75px;
+    margin-top: -30px;
+}
+
+#misclist{
+    list-style: none;
+    text-align: center;
+}
+
+#sidebar{
+    top: 10%;
+    width: 20%;
+    max-height: 90%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.nav-icon{
+    position: absolute;
+    left:0;
+    padding-top: 1%;;
+}
+
+.scrollable {
+    height: 100%;
+    overflow: auto;
+}
+
+.pageBg {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: -999;
+    }
+.pageTitle{
+    color: #781f16;
+    margin-top: 5%;
+}
+
+.utilStyle{
+    font-size: 25px;
+}
+
+.item:hover svg *, .utilItem:hover svg * {
+    fill: #c79a47;
+}
+.item:hover .itemText, .utilItem:hover .itemText{
+    color: #c79a47;
+}
+.svg{
+    vertical-align: middle;
+}
+
+.nav-icon:focus a{
+color: #c79a47;
+}
+
+#nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}

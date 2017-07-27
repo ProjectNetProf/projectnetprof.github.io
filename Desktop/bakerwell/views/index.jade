@@ -1,0 +1,55 @@
+extends layout
+
+block head
+block title
+    title Baker's Well
+
+block backgroundimage
+    img.pageBg(src='/images/index_img/index_background.png' , width = '45%' style="margin-right: 20%;")
+
+block sidebar
+    li.item
+        a(href='./preOrder')
+            img.svg(src='/images/index_img/pre_order_btn.svg', alt='Pre Order System')
+            .textDiv
+                span.itemText Pre-Order System
+
+    hr.divider
+
+    li.item
+        a(href='./newPreOrder')
+            img.svg(src='/images/index_img/new_pre_order_btn.svg', alt='New Pre Order(s)')
+            .textDiv
+                span.itemText New Pre Order(s)
+
+    hr.divider
+
+    li.item
+        a(href='./kitchenOrder')
+            img.svg(src='/images/index_img/kitchen_order_btn.svg', alt='Kitchen Order System')
+            .textDiv
+                span.itemText Kitchen Order System
+
+    hr.divider
+
+    li.item
+        a(href='./dailyStock')
+            img.svg(src='/images/index_img/daily_stock_btn.svg', alt='Daily Stock Inventory System')
+            .textDiv
+                span.itemText Daily Stock Inventory System
+
+    hr.divider
+
+    li.item
+        a(href='./rawMaterial')
+            img.svg(src='/images/index_img/raw_material_btn.svg', alt='Raw Material System')
+            .textDiv
+                span.itemText Raw Material System
+
+block utilbottom
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/acc_info_btn.svg', alt='Acc info')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/logout_btn.svg', alt='Logout')

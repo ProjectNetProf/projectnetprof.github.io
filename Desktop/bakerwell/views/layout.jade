@@ -1,0 +1,68 @@
+doctype html
+html
+    head
+
+        block title
+
+        link(rel='stylesheet',type='text/css', href='/stylesheets/style.css')
+        link(rel='stylesheet',type='text/css', href='/stylesheets/bootstrap.css')
+        link(rel='stylesheet',type='text/css', href='/stylesheets/bootstrap-theme.css')
+
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+
+        script(src='javascripts/jquery-3.2.1.js')
+        script(src='javascripts/bootstrap.js')
+        script(src='javascripts/npm.js')
+
+        script.
+
+            $(document).ready(function() {
+              $('img[src$=".svg"]').each(function() {
+                  var $img = jQuery(this);
+                  var imgURL = $img.attr('src');
+                  var attributes = $img.prop("attributes");
+
+                  $.get(imgURL, function(data) {
+                      // Get the SVG tag, ignore the rest
+                      var $svg = jQuery(data).find('svg');
+
+                      // Remove any invalid XML tags
+                      $svg = $svg.removeAttr('xmlns:a');
+
+                      // Loop through IMG attributes and apply on SVG
+                      $.each(attributes, function() {
+                          $svg.attr(this.name, this.value);
+                      });
+
+                      // Replace IMG with SVG
+                      $img.replaceWith($svg);
+                  }, 'xml');
+              });
+            });
+
+
+        block head
+
+    body
+        block backgroundimage
+        .container-fluid
+            .row
+                .collapse.scrollable#sidebar
+                    .list-group.panel
+                        #logo
+                            img(id ="logo" src='/images/logo.png', alt='Bakers Well Logo')
+                        ul#nav
+                            block sidebar
+                .col-sm-12
+                    .nav-icon
+                        a(href='#' data-target='#sidebar', data-toggle='collapse' style='text-style: none;')
+                            span.glyphicon.glyphicon-menu-hamburger(style='color:#781f16; font-size: 30px; left:0; margin-left:-10')
+                    block content
+                .col-sm-1
+                    #utilWrapper
+                        #utiltop
+                            ul#misclist
+                                block utiltop
+                        #utilbottom
+                            ul#misclist
+                                block utilbottom

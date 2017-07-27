@@ -1,0 +1,56 @@
+extends layout
+head
+    block title
+        title Raw Material System
+
+block backgroundimage
+    img.pageBg(src='/images/rawMaterial_img/raw_Material_background.png' , width = '85%')
+
+block sidebar
+    li.item
+        a(href='#')
+            img.listImg(src='/images/preOrder_img/monthly_btn.png', alt='Test Button')
+            i.fa
+            span.itemText(style='margin-left:10px;') Test Button
+
+    hr.divider
+
+    li.item
+        a(href='#')
+            img.listImg(src='/images/preOrder_img/weekly_btn.png', alt='Test Button)')
+            i.fa
+            span.itemText(style='margin-left:10px;') Test Button
+
+    hr.divider
+
+    li.item
+        a(href='#')
+            img.listImg(src='/images/preOrder_img/daily_btn.png', alt='Test Button')
+            i.fa
+            span.itemText(style='margin-left:10px;') Test Button
+
+
+block utiltop
+    li.utilItem
+        a(href='/')
+            img.svg(src='/images/utilities_img/home_btn.svg', alt='home')
+block utilbottom
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/search_btn.svg', alt='Search')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/redeem_btn.svg', alt='Redeem')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/print_btn.svg', alt='Print')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/acc_info_btn.svg', alt='Acc info')
+    li.utilItem
+        a(href='#anch2')
+            img.svg(src='/images/utilities_img/logout_btn.svg', alt='Logout')
+block content
+    h1.pageTitle Raw Material System
+
+
